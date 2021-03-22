@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<!-- Javascript SDK-->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  <script src="js/amazon-cognito-auth.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script> 
+  <script src="js/amazon-cognito-identity.min.js"></script>  
+  <script src="js/config.js"></script>
+  </head>
+
+	
+  <body>
+ 
+	  <form id="form" class="form">
+	<div class="container">
+		<h1 class="h3 mb-3 font-weight-normal" id="titleheader">Register an Account</h1>
+		
+		
+		
+		<div class="form-control">
+			<label for="personalnameRegister"> Username</label>
+			<input type="personalname" id="personalnameRegister" placeholder="Name" pattern=".*" required>
+			
+		</div>
+		
+		
+		<div class="form-control">
+			<label for="emailInputRegister"> Email</label>
+			<input type="email" id="emailInputRegister" placeholder="Email" pattern=".*" required>
+			
+		</div>
+		
+		<div class="form-control">
+			<label for="passwordInputRegister"> Password</label>		
+			<input type="password" class="form-control" id="passwordInputRegister" placeholder="Password" pattern=".*" required>
+
+		</div>
+				
+		<div class="form-control">
+			<label for="confirmationpassword"> Confirm Password</label>
+			<input type="password" id="confirmationpassword" placeholder="Confirm Password" pattern=".*" required>
+		</div>
+		
+		<button id="mainbutton" class="btn btn-lg btn-primary btn-block" type="button" onclick="registerButton()" >Register</button>
+	</div>
+</form>
+
+	<script src="script.js"></script>
+	
+	
+
+ </body>
+  
+</html>
